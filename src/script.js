@@ -22,17 +22,16 @@ const dataFunction = (data) => {
         <p><b>Location:</b> ${
           data.location ? data.location : 'Your Location?'
         }</p>
-        <a href="${data.url}/followers" class="card-link">Followers: ${
+        <a href="${data.html_url}?tab=followers" class="card-link">Followers: ${
       data.followers
     }</a>
-                <a href="${data.url}/following" class="card-link">Following: ${
+        <a href="${data.html_url}?tab=following" class="card-link">Following: ${
       data.following
     }</a>
     </div>
     `;
     inputUser.value = '';
     userCard.style.display = 'block';
+    document.getElementById('search-text').style.display = 'none';
   }
-  document.getElementById('search-text').style.display = 'none';
-  console.log(data);
 };
