@@ -10,6 +10,7 @@
       integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="css/style.css" />
     <title>github user api</title>
   </head>
   <body>
@@ -18,16 +19,7 @@
         <input id="search-input" type="text" class="form-control" />
         <button onclick="clickSearchBtn()" class="btn btn-info">Search</button>
       </div>
-      <div class="card mx-auto" style="width: 18rem">
-        <img id="user-img" src="" class="card-img-top" alt="" />
-        <div class="card-body">
-          <p><a id="user-name" href="#"></a></p>
-          <h2 id="full-name"></h2>
-          <p></p>
-          <a href="#" class="card-link"></a>
-          <a href="#" class="card-link"></a>
-        </div>
-      </div>
+      <div id="user-card" class="card mx-auto" style="width: 18rem"></div>
     </section>
     <script src="src/script.js"></script>
   </body>
